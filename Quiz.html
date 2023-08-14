@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIA ETEC</title>
+
+    <link rel="stylesheet" href="quizstyle.css">
+
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            color: aliceblue;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        input[type="button"] {
+            display: block;
+            margin: 50px auto;
+            padding: 10px;
+            border-radius: 20px;
+            border: solid rgb(0, 0, 0) 1px;
+            background-color: rgb(219, 219, 219);
+            color: #000000;
+            cursor: pointer;
+            font-size: 13px;
+        }
+
+        input[type=button]:hover {
+            transform: scale(1.1);
+            opacity: 80%;
+        }
+
+        #resposta {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"> <img src="logo12.png" class="img_logo_header"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre Nós</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <br><br>
+        <h1>QUIZ</h1> <br>
+
+        <form name="quiz1">
+            <h2>Você gostaria de fazer:</h2> <br>
+            <input type="radio" name="questao1" value="0"> Apenas o Ensino Médio.<br>
+            <input type="radio" name="questao1" value="1"> Outra opções.<br>
+
+            <input type="button" value="Verificar Respostas" onclick="corrigir()">
+        </form>
+
+        <div id="resposta"></div>
+    </main>
+    <script src="quizpt1.js"></script>
+</body>
+
+</html>

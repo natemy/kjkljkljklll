@@ -1,0 +1,247 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    ;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+    position: relative;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #272727;
+    height: 12vh;
+    box-shadow: 1px 1px 4px #000000;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+
+body {
+    background-color: #272727;
+}
+
+.img_logo_header {
+    width: 190px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px
+}
+
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #272727;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+main div#cx1,
+#cx2,
+#cx3,
+#cx4,
+#cx5,
+#cx6,
+#cx7,
+#cx8,
+#cx9 {
+    background-color: #d8d8d8;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 5%;
+}
+
+
+
+h1 {
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #fff
+}
+
+h2 {
+    color: #fff;
+}
+
+button {
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: #59626b;
+    color: #dbdfe7;
+    font-size: 12px;
+    text-decoration: none;
+    align-items: center;
+}
+
+button a {
+    border-radius: 5px;
+    width: 70px;
+    height: 30px;
+    background-color: #59626b;
+    color: #dbdfe7;
+    font-size: 12px;
+    text-decoration: none;
+    align-items: center;
+}
+
+button a :hover {
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    background-color: #757e86;
+    color: #dbdfe7;
+    font-size: 17px;
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.question1 {
+    color: #fff;
+}
+
+.question2 {
+    color: #fff
+}
+
+.question3 {
+    color: #fff
+}
+
+.question4 {
+    color: #fff
+}
+
+.question5 {
+    color: #fff
+}
+
+.question6{
+    color:#fff
+}
+
+.question7{
+    color:#fff
+}
+
+.question8{
+    color:#fff
+}
+
+
+ul.nav-list a::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 25px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+ul.nav-list a:hover::after{
+    width: 100%;
+    height: 4px;
+}

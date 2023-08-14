@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUIA ETEC</title>
+
+    <link rel="stylesheet" href="quizstyle.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        form {
+            color: aliceblue;
+        }
+
+
+        input[type="button"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 20px;
+            border: solid rgb(0, 0, 0) 1px;
+            background-color: rgb(219, 219, 219);
+            color: #000000;
+            cursor: pointer;
+            font-size: 15px;
+            margin-bottom: 40px;
+            margin-top: 0px;
+            float: left;
+        }
+
+        input[type=button]:hover {
+            transform: scale(1.1);
+            opacity: 80%;
+        }
+
+        #resposta {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html"> <img src="logo12.png" class="img_logo_header"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre Nós</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="Contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <br><br>
+        <div class="container">
+            <h1>Quiz</h1> <br><br><br>
+            <form name="signo">
+
+                <div name="question1">
+                    <h1>Questão.01 Você gostaria de fazer:</h1><br><br><br>
+                    <input type="radio" name="question1"> Ensino médio Integrado ao Técnico (M-Tec).<br> <br>
+                    <input type="radio" name="question1"> Apenas o Ensino Técnico.<br><br>
+                    <input type="radio" name="question1"> Ensino médio Integrado ao Técnico Período Integral
+                    (M-Tec-PI).<br><br>
+                    <input type="radio" name="question1"> Ensino médio Integrado ao Técnico Noite (M-Tec-N).<br><br><br><br>
+
+                </div>
+
+
+                <div name="question2">
+                    <h1>Questão.02 Qual destes possíveis ambientes de trabalho mais combina com sua personalidade:</h1>
+                    <br><br><br>
+                    <input type="radio" name="question2">Home Office<br><br>
+                    <input type="radio" name="question2">Centro de Saúde e Laboratórios<br><br>
+                    <input type="radio" name="question2">Em meio a Natureza.<br><br>
+                    <input type="radio" name="question2">Centros Esportivos.<br><br>
+                    <input type="radio" name="question2">Em Instituição de Ensino.<br><br><br><br>
+
+                </div>
+
+
+                <div name="question3">
+                    <h1>Questão.03 Qual sua Matéria favorita?</h1><br><br><br>
+                    <input type="radio" name="question3">Matemática.<br><br>
+                    <input type="radio" name="question3">Ciencias.<br><br>
+                    <input type="radio" name="question3">Português.<br><br>
+                    <input type="radio" name="question3"> História<br><br>
+                    <input type="radio" name="question3">Geografia.<br><br>
+                    <input type="radio" name="question3">Nenhuma das anteriores/Não tenho matéria favorita<br><br><br><br>
+
+                </div>
+
+
+                <div name="question4">
+                    <h1>Questão.04 Você se considera de:</h1><br><br><br>
+                    <input type="radio" name="question4">Exatas<br><br>
+                    <input type="radio" name="question4">Biológicas<br><br>
+                    <input type="radio" name="question4">Humanas<br><br>
+                    <input type="radio" name="question4">Não Sei/Nenhuma Das Anteriores <br><br><br><br>
+                </div>
+
+
+                <div class="question5">
+                    <h1>Questão.05 Você gosta mais de atividades que envolvam:</h1><br><br><br>
+                    <input type="radio" name="question5">Planejamento e cálculo<br><br>
+                    <input type="radio" name="question5">Relacionamento e intermediação de pessoas<br><br>
+                    <input type="radio" name="question5">Criação e expressão<br><br><br><br>
+
+                </div>
+
+
+
+
+                <input type="button" value="Enviar" onclick="abrirPopUp()">
+                <script src="quizpt2ofc.js"></script> 
+
+            </form>
+
+        </div>
+
+    </main>
+    <script src="mobile-navbar.js"></script>
+</body>
+
+</html>
